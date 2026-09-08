@@ -1,4 +1,4 @@
-# UAV Graph
+# StereoUAV Graph Stitching
 
 Incremental visual-graph registration and binocular UAV image stitching with stereo constraints and global optimization.
 
@@ -13,3 +13,10 @@ This repository collects three related implementations for large-scale UAV image
 Source code, configuration, documentation, and lightweight data descriptors are versioned. Runtime caches, debug imagery, rendered mosaics, and other generated outputs are intentionally excluded so the repository remains compact and reproducible.
 
 See [`uav_stitching/README.md`](uav_stitching/README.md) for environment setup, pipeline commands, method boundaries, verified metrics, and artifact descriptions.
+
+## Reference paper
+
+Zhongxing Wang, Zhizhong Fu, and Jin Xu, “Large-scale UAV image stitching based on global registration optimization and graph-cut method,” *Journal of Visual Communication and Image Representation*, vol. 107, article 104354, 2025.
+
+- DOI: [10.1016/j.jvcir.2024.104354](https://doi.org/10.1016/j.jvcir.2024.104354)
+- Publisher page: [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1047320324003109)
