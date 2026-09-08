@@ -1,0 +1,18 @@
+# This repository intentionally publishes only the selected UAV implementations.
+/*
+!/.gitignore
+!/README.md
+!/uav_stereo_incremental_visual_graph_global_registration.py
+!/UAV_Binocular_Camera_block_incremental_rigid_stereo_similarity_backbone_core.py
+!/uav_stitching/
+
+# Generated Python and test artifacts
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+
+# Generated stitching artifacts and reusable caches
+/uav_stitching/cache/
+/uav_stitching/debug/
+/uav_stitching/outputs/
+

@@ -1,0 +1,7 @@
+numpy>=1.26
+scipy>=1.12
+opencv-contrib-python>=4.8
+Pillow>=10
+PyYAML>=6
+tqdm>=4.66
+pytest>=8
