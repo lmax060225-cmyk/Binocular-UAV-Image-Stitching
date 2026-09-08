@@ -1,4 +1,4 @@
-# StereoUAV Graph Stitching
+# UAV_Graph
 
 Incremental visual-graph registration and binocular UAV image stitching with stereo constraints and global optimization.
 
@@ -10,9 +10,9 @@ This repository collects three related implementations for large-scale UAV image
 
 ## Repository scope
 
-Source code, configuration, documentation, and lightweight data descriptors are versioned. Runtime caches, debug imagery, rendered mosaics, and other generated outputs are intentionally excluded so the repository remains compact and reproducible.
+The repository includes source code, configuration, documentation, and saved results from the GPS-guided and independent visual-graph pipelines. Published results include mosaics, masks, metrics, and selected diagnostic artifacts. Raw input images and the `uav_stitching/cache/` and `uav_stitching/debug/` directories are not included.
 
-See [`uav_stitching/README.md`](uav_stitching/README.md) for environment setup, pipeline commands, method boundaries, verified metrics, and artifact descriptions.
+See [`uav_stitching/README.md`](uav_stitching/README.md) for GPS-guided pipeline setup, commands, implementation scope, and recorded results. Its dependencies and configuration apply to that subproject; the two standalone scripts have separate entry points.
 
 ## Results
 

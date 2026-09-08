@@ -1,6 +1,6 @@
-Python = C:\Users\Lenovo\.conda\envs\uav_gtsam\python.exe
+Python = python (machine-specific executable path omitted)
 OpenCV = 5.0.0
-Output = D:\UAV_Graph\out_new_visual_graph
+Output = out_new_visual_graph (repository-relative path)
 Synchronized pairs = 70, images = 140, P/grid = (40, 5, 8)
 Pair 1/70 frame=0: candidates=0, verified=0, parent=-, image_edges=1, elapsed=1.8s
 Pair 2/70 frame=1: candidates=1, verified=1, parent=0, image_edges=4, elapsed=4.6s

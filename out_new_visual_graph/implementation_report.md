@@ -2,22 +2,22 @@
 
 ## 实现范围与复现命令
 
-独立程序：`D:\UAV_Graph\uav_stereo_incremental_visual_graph_global_registration.py`。
+Program: `uav_stereo_incremental_visual_graph_global_registration.py` (repository root).
 
 从空文件编写；未读取、修改、复制或继承以前的 Python 拼接程序。方法依据本次粘贴的完整规格与本目录 `paper.markdown`。该 Markdown 是论文方法摘要；公式、归一化、参数值与图构建细则以本次明确给出的规格为准。
 
-实际 Python：`C:\Users\Lenovo\.conda\envs\uav_gtsam\python.exe`。用户消息中的 `envs\uav\_gtsam\python.exe` 不存在，已现场核对实际路径。
+Activate an environment containing this standalone script's dependencies, then run the following commands from the repository root. Machine-specific paths in this report and the accompanying text logs have been normalized for publication; recorded metrics are unchanged.
 
 ```powershell
-& 'C:\Users\Lenovo\.conda\envs\uav_gtsam\python.exe' 'D:\UAV_Graph\uav_stereo_incremental_visual_graph_global_registration.py' --self-test
-& 'C:\Users\Lenovo\.conda\envs\uav_gtsam\python.exe' 'D:\UAV_Graph\uav_stereo_incremental_visual_graph_global_registration.py'
+python uav_stereo_incremental_visual_graph_global_registration.py --self-test
+python uav_stereo_incremental_visual_graph_global_registration.py
 ```
 
 默认读入同目录 `data_set_5\left`、`data_set_5\right`，输出至 `out_new_visual_graph`。支持 `--left`、`--right`、`--output`。已有最终图时默认拒绝覆盖，重做整个实验应指定新的输出目录。
 
 ```powershell
 # 使用本程序保存的最终图重新执行配准与渲染，校验输入路径、大小、修改时间和非渲染配置；仅显示/接缝像素上限允许变化。
-& 'C:\Users\Lenovo\.conda\envs\uav_gtsam\python.exe' 'D:\UAV_Graph\uav_stereo_incremental_visual_graph_global_registration.py' --resume-graph
+python uav_stereo_incremental_visual_graph_global_registration.py --resume-graph
 ```
 
 运行依赖仅 NumPy、OpenCV、SciPy、pandas 与 Python 标准库；无深度学习框架或外部优化后端依赖。
@@ -228,5 +228,5 @@ out_new_visual_graph/
 
 最终投影预览：
 
-![Projective mosaic](D:/UAV_Graph/out_new_visual_graph/mosaics/global_projective_mosaic_preview.jpg)
+![Projective mosaic](mosaics/global_projective_mosaic_preview.jpg)
 
