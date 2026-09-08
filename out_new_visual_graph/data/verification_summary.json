@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "140_images_70_pairs": true,
+    "SIFT_exactly_once_per_image": true,
+    "all_selected_matches_equal_40": true,
+    "single_image_component": true,
+    "all_pairs_registered_at_arrival": true,
+    "strong_degree_at_most_4": true,
+    "at_most_2_edges_per_pair_relation": true,
+    "all_tree_parents_sequential": true,
+    "all_final_edges_geometrically_verified": true,
+    "orientation_roundtrip_assertions": true,
+    "saved_graph_config_and_input_manifest_valid": true,
+    "final_transforms_finite": true,
+    "reference_is_identity": true,
+    "saved_transform_energy_matches_solver": true,
+    "projective_optimizer_converged": true,
+    "both_mosaics_decode_and_match_saved_dimensions": true,
+    "both_masks_match_recorded_valid_pixels": true,
+    "both_mosaics_used_GraphCut_139_times": true,
+    "no_hard_overlay_fallback": true,
+    "run_completed": true
+  },
+  "matching_attempts": 1830,
+  "verified_image_observations": 923,
+  "rejected_image_attempts": 907,
+  "selected_optimization_edges": 478,
+  "strong_degree_max": 4,
+  "pair_relation_image_edge_max": 2,
+  "input_shapes": [
+    [
+      1978,
+      2640
+    ]
+  ],
+  "energy_recomputed_from_csv": {
+    "data_energy": 77.0468056401433,
+    "rigid_energy": 0.03570669037207578,
+    "global_energy": 105.61215793780393
+  }
+}

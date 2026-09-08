@@ -5,6 +5,7 @@
 !/uav_stereo_incremental_visual_graph_global_registration.py
 !/UAV_Binocular_Camera_block_incremental_rigid_stereo_similarity_backbone_core.py
 !/uav_stitching/
+!/out_new_visual_graph/
 
 # Generated Python and test artifacts
 **/__pycache__/
@@ -14,5 +15,3 @@
 # Generated stitching artifacts and reusable caches
 /uav_stitching/cache/
 /uav_stitching/debug/
-/uav_stitching/outputs/
-

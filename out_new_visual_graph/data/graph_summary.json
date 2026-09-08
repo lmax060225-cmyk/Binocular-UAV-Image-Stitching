@@ -1,0 +1,21 @@
+{
+  "num_stereo_pairs": 70,
+  "num_images": 140,
+  "intra_pair_edges": 70,
+  "total_optimization_edges": 478,
+  "image_graph_connected_components": 1,
+  "degree_min": 3,
+  "degree_mean": 6.828571428571428,
+  "degree_median": 7.0,
+  "degree_max": 11,
+  "pair_tree_relations": 69,
+  "image_tree_edges": 138,
+  "pair_strong_relations": 85,
+  "image_strong_edges": 161,
+  "pair_loop_relations": 64,
+  "image_loop_edges": 109,
+  "sequential": 203,
+  "retrieval": 237,
+  "verified": 225,
+  "pruned_strong": 2
+}

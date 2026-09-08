@@ -14,6 +14,26 @@ Source code, configuration, documentation, and lightweight data descriptors are 
 
 See [`uav_stitching/README.md`](uav_stitching/README.md) for environment setup, pipeline commands, method boundaries, verified metrics, and artifact descriptions.
 
+## Results
+
+### GPS-guided stitching
+
+The `uav_stitching` pipeline uses GPS metadata to construct the image-neighbor graph before global affine/projective registration and Graph-Cut blending. Metrics, masks, and reduced-size validation runs are available in [`uav_stitching/outputs`](uav_stitching/outputs).
+
+![GPS-guided final mosaic](uav_stitching/outputs/final_mosaic.jpg)
+
+### Incremental visual-graph registration
+
+The independent visual-graph pipeline builds and optimizes image-registration edges directly. Its full run artifacts—including graph diagnostics, transforms, verification summaries, masks, and mosaics—are available in [`out_new_visual_graph`](out_new_visual_graph). See the [implementation report](out_new_visual_graph/implementation_report.md) for details.
+
+Projective result:
+
+![Visual-graph global projective mosaic](out_new_visual_graph/mosaics/global_projective_mosaic.jpg)
+
+Affine result:
+
+![Visual-graph global affine mosaic](out_new_visual_graph/mosaics/global_affine_mosaic.jpg)
+
 ## Reference paper
 
 Zhongxing Wang, Zhizhong Fu, and Jin Xu, “Large-scale UAV image stitching based on global registration optimization and graph-cut method,” *Journal of Visual Communication and Image Representation*, vol. 107, article 104354, 2025.

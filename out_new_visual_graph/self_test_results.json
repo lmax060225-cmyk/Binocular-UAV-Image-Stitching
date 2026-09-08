@@ -1,0 +1,28 @@
+{
+  "tests_run": 18,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "runtime": 0.24081630000728182,
+  "tests": {
+    "test_affine_sparse_recovery": "PASS",
+    "test_all_edges_are_ordinary": "PASS",
+    "test_candidate_is_not_optimization_edge": "PASS",
+    "test_dedup_roles_and_orientation": "PASS",
+    "test_existing_run_is_not_overwritten": "PASS",
+    "test_graphcut_mask_union": "PASS",
+    "test_loop_strict_gate_and_second_edge": "PASS",
+    "test_mutual_ratio_matching": "PASS",
+    "test_ordinary_edge_orientation": "PASS",
+    "test_pair_relation_materialization": "PASS",
+    "test_projective_analytic_jacobian": "PASS",
+    "test_projective_objective_exact_terms": "PASS",
+    "test_projective_recovery": "PASS",
+    "test_retrieval_is_incremental": "PASS",
+    "test_retrieval_parent_materializes_at_most_two_edges": "PASS",
+    "test_strong_edge_culling": "PASS",
+    "test_tree_connectivity": "PASS",
+    "test_uniform_P_selection": "PASS"
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "stage": "affine",
+    "component": 0,
+    "file": "D:\\UAV_Graph\\out_new_visual_graph\\mosaics\\global_affine_mosaic.jpg",
+    "width": 3733,
+    "height": 4959,
+    "render_scale": 0.8287545475175242,
+    "input_coordinate_units": "original image pixels",
+    "graphcut_available": true,
+    "graphcut_seams": 139,
+    "hard_overlay_fallbacks": 0,
+    "graphcut_max_pixels": 250000,
+    "valid_pixels": 14664384,
+    "canvas_coverage": 0.792157842716382,
+    "view_transform": [
+      [
+        0.8287545475175242,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.8287545475175242,
+        3140.150980543899
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "runtime": 58.25438269998995
+  },
+  {
+    "stage": "projective",
+    "component": 0,
+    "file": "D:\\UAV_Graph\\out_new_visual_graph\\mosaics\\global_projective_mosaic.jpg",
+    "width": 4406,
+    "height": 6812,
+    "render_scale": 0.8287545475175242,
+    "input_coordinate_units": "original image pixels",
+    "graphcut_available": true,
+    "graphcut_seams": 139,
+    "hard_overlay_fallbacks": 0,
+    "graphcut_max_pixels": 250000,
+    "valid_pixels": 24765540,
+    "canvas_coverage": 0.8251419553062351,
+    "view_transform": [
+      [
+        0.8287545475175242,
+        0.0,
+        49.72527285105145
+      ],
+      [
+        0.0,
+        0.8287545475175242,
+        4642.682975193171
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "runtime": 71.9527012000035
+  }
+]

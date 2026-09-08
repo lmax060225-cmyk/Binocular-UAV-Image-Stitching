@@ -1,0 +1,180 @@
+Python = C:\Users\Lenovo\.conda\envs\uav_gtsam\python.exe
+OpenCV = 5.0.0
+Output = D:\UAV_Graph\out_new_visual_graph
+Synchronized pairs = 70, images = 140, P/grid = (40, 5, 8)
+Replaying validated FINAL image optimization graph
+
+============================================================
+GLOBAL AFFINE OPTIMIZATION
+============================================================
+Component=0, N=140, reference=left:0
+M = 478
+P = 40
+solver = sparse linear LSMR
+RMSE before = 215.1488656845922
+RMSE after = 16.828045621091274
+
+============================================================
+GLOBAL PROJECTIVE OPTIMIZATION
+============================================================
+Objective: Eproj = E_match/(M*P) + 800 * E_rigid/N
+sigma_tr = 5000
+No GPS prior
+No stereo residual
+No safety penalty
+No robust loss
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1         7.3065e+02                                    4.99e+05    
+       1              3         4.1075e+02      3.20e+02       1.64e+00       1.30e+06    
+       2              4         2.4336e+02      1.67e+02       3.43e+00       2.84e+06    
+       3              5         5.3687e+01      1.90e+02       2.57e-01       3.05e+04    
+       4              6         5.3322e+01      3.65e-01       3.99e-01       2.39e+05    
+       5              7         5.2808e+01      5.14e-01       2.41e-02       9.03e+02    
+       6              8         5.2806e+01      1.56e-03       1.37e-02       5.09e+02    
+       7              9         5.2806e+01      1.89e-04       3.49e-03       1.69e+02    
+       8             10         5.2806e+01      4.83e-05       1.14e-03       1.47e+02    
+       9             11         5.2806e+01      1.99e-05       5.15e-04       6.53e+01    
+      10             12         5.2806e+01      1.36e-05       3.89e-04       9.91e+01    
+      11             13         5.2806e+01      1.07e-05       2.90e-04       5.23e+01    
+      12             14         5.2806e+01      7.39e-06       2.02e-04       6.21e+01    
+      13             15         5.2806e+01      6.15e-06       1.70e-04       3.85e+01    
+      14             16         5.2806e+01      5.54e-06       1.61e-04       4.52e+01    
+      15             17         5.2806e+01      5.21e-06       1.50e-04       3.44e+01    
+      16             18         5.2806e+01      4.87e-06       1.45e-04       3.86e+01    
+      17             19         5.2806e+01      4.54e-06       1.33e-04       3.09e+01    
+      18             20         5.2806e+01      4.11e-06       1.24e-04       3.28e+01    
+      19             21         5.2806e+01      3.72e-06       1.10e-04       2.77e+01    
+      20             22         5.2806e+01      3.41e-06       1.03e-04       2.72e+01    
+      21             23         5.2806e+01      3.08e-06       9.17e-05       2.44e+01    
+      22             24         5.2806e+01      3.08e-06       9.41e-05       2.78e+01    
+      23             25         5.2806e+01      2.82e-06       8.17e-05       2.11e+01    
+      24             26         5.2806e+01      2.72e-06       8.56e-05       2.70e+01    
+      25             27         5.2806e+01      2.63e-06       7.57e-05       1.91e+01    
+      26             28         5.2806e+01      2.56e-06       8.14e-05       2.65e+01    
+      27             29         5.2806e+01      2.41e-06       6.98e-05       1.75e+01    
+      28             30         5.2806e+01      2.45e-06       7.97e-05       2.67e+01    
+      29             31         5.2806e+01      2.33e-06       6.71e-05       1.62e+01    
+      30             32         5.2806e+01      2.38e-06       7.90e-05       2.68e+01    
+      31             33         5.2806e+01      2.30e-06       6.57e-05       1.49e+01    
+      32             34         5.2806e+01      2.21e-06       7.52e-05       2.47e+01    
+      33             35         5.2806e+01      2.18e-06       6.36e-05       1.39e+01    
+      34             36         5.2806e+01      2.12e-06       7.28e-05       2.45e+01    
+      35             37         5.2806e+01      2.10e-06       6.18e-05       1.36e+01    
+      36             38         5.2806e+01      2.10e-06       7.22e-05       2.51e+01    
+      37             39         5.2806e+01      2.00e-06       5.90e-05       1.25e+01    
+      38             40         5.2806e+01      1.83e-06       6.49e-05       2.19e+01    
+      39             41         5.2806e+01      1.82e-06       5.54e-05       1.20e+01    
+      40             42         5.2806e+01      1.73e-06       6.14e-05       2.29e+01    
+      41             43         5.2806e+01      1.71e-06       5.29e-05       1.18e+01    
+      42             44         5.2806e+01      1.48e-06       5.36e-05       2.00e+01    
+      43             45         5.2806e+01      1.56e-06       5.09e-05       1.23e+01    
+      44             46         5.2806e+01      1.37e-06       4.89e-05       1.76e+01    
+      45             47         5.2806e+01      1.34e-06       4.66e-05       1.24e+01    
+      46             48         5.2806e+01      1.40e-06       4.99e-05       1.91e+01    
+      47             49         5.2806e+01      1.34e-06       4.58e-05       1.20e+01    
+      48             50         5.2806e+01      1.35e-06       4.89e-05       1.88e+01    
+      49             51         5.2806e+01      1.27e-06       4.39e-05       1.14e+01    
+      50             52         5.2806e+01      1.27e-06       4.76e-05       1.87e+01    
+      51             53         5.2806e+01      1.25e-06       4.38e-05       1.14e+01    
+      52             54         5.2806e+01      1.14e-06       4.38e-05       1.68e+01    
+      53             55         5.2806e+01      1.12e-06       4.14e-05       1.18e+01    
+      54             56         5.2806e+01      1.10e-06       4.27e-05       1.65e+01    
+      55             57         5.2806e+01      1.19e-06       4.42e-05       1.32e+01    
+      56             58         5.2806e+01      1.08e-06       4.15e-05       1.47e+01    
+      57             59         5.2806e+01      1.14e-06       4.41e-05       1.39e+01    
+      58             60         5.2806e+01      1.05e-06       4.00e-05       1.32e+01    
+      59             61         5.2806e+01      1.05e-06       4.28e-05       1.43e+01    
+      60             62         5.2806e+01      9.60e-07       3.74e-05       1.09e+01    
+      61             63         5.2806e+01      8.75e-07       3.81e-05       1.37e+01    
+      62             64         5.2806e+01      9.65e-07       3.83e-05       1.15e+01    
+      63             65         5.2806e+01      8.76e-07       3.70e-05       1.26e+01    
+      64             66         5.2806e+01      8.41e-07       3.51e-05       1.06e+01    
+      65             67         5.2806e+01      8.92e-07       3.78e-05       1.38e+01    
+      66             68         5.2806e+01      8.33e-07       3.41e-05       9.29e+00    
+      67             69         5.2806e+01      7.78e-07       3.44e-05       1.32e+01    
+      68             70         5.2806e+01      8.56e-07       3.52e-05       9.80e+00    
+      69             71         5.2806e+01      7.46e-07       3.21e-05       1.16e+01    
+      70             72         5.2806e+01      7.84e-07       3.39e-05       1.04e+01    
+      71             73         5.2806e+01      7.84e-07       3.26e-05       1.20e+01    
+      72             74         5.2806e+01      6.95e-07       3.08e-05       9.91e+00    
+      73             75         5.2806e+01      7.87e-07       3.35e-05       1.41e+01    
+      74             76         5.2806e+01      6.62e-07       2.87e-05       8.69e+00    
+      75             77         5.2806e+01      7.01e-07       3.18e-05       1.53e+01    
+      76             78         5.2806e+01      6.63e-07       2.83e-05       8.31e+00    
+      77             79         5.2806e+01      6.38e-07       2.98e-05       1.51e+01    
+      78             80         5.2806e+01      6.85e-07       2.93e-05       8.73e+00    
+      79             81         5.2806e+01      6.35e-07       2.90e-05       1.40e+01    
+      80             82         5.2806e+01      7.03e-07       3.06e-05       9.35e+00    
+      81             83         5.2806e+01      6.26e-07       2.77e-05       1.24e+01    
+      82             84         5.2806e+01      6.09e-07       2.83e-05       9.12e+00    
+      83             85         5.2806e+01      6.22e-07       2.76e-05       1.26e+01    
+      84             86         5.2806e+01      5.42e-07       2.58e-05       8.22e+00    
+      85             87         5.2806e+01      6.53e-07       2.94e-05       1.47e+01    
+      86             88         5.2806e+01      6.10e-07       2.69e-05       8.66e+00    
+      87             89         5.2806e+01      5.23e-07       2.51e-05       1.22e+01    
+`ftol` termination condition is satisfied.
+Function evaluations 89, initial cost 7.3065e+02, final cost 5.2806e+01, first-order optimality 1.22e+01.
+RMSE before = 16.828045621091274
+RMSE after = 4.522366705498424
+{
+  "stage": "projective",
+  "solver": "TRF/LSMR analytic sparse Jacobian",
+  "nfev": 89,
+  "njev": 88,
+  "cost": 52.806078968901986,
+  "optimality": 12.227411311243271,
+  "status": 2,
+  "message": "`ftol` termination condition is satisfied.",
+  "converged": true,
+  "finite": "True",
+  "runtime": 8.375180200004252,
+  "M": 478,
+  "P": 40,
+  "N": 140,
+  "omega_rigid": 800.0,
+  "sigma_tr": 5000.0,
+  "data_energy_before": 1023.2952179396996,
+  "rigid_energy_before": 0.5475068010614883,
+  "global_energy_before": 1461.3006587888901,
+  "data_energy_after": 77.04680564014333,
+  "rigid_energy_after": 0.03570669037207578,
+  "global_energy_after": 105.61215793780396
+}
+
+All-RANSAC paper-style and selected-P metrics:
+     stage             points  count       rmse       mean    median        p90        p95         max
+   initial all_RANSAC_inliers 686705 215.148866 100.099250 33.023497 228.083586 532.520951 1317.750138
+   initial         selected_P  19120 228.082207 106.455280 27.542088 281.671892 607.265655 1317.750138
+    affine all_RANSAC_inliers 686705  16.828046   8.487813  4.387740  17.209826  27.435618  256.418063
+    affine         selected_P  19120  31.988986  20.281957 11.943555  48.767823  70.595336  254.450170
+projective all_RANSAC_inliers 686705   4.522367   3.091986  2.027199   6.793654   9.202817   79.976654
+projective         selected_P  19120   8.777631   6.633421  5.154815  13.690955  17.563689   79.976654
+Mosaic global_affine_mosaic.jpg: 10/140, GraphCut seams=9, elapsed=7.6s
+Mosaic global_affine_mosaic.jpg: 20/140, GraphCut seams=19, elapsed=17.0s
+Mosaic global_affine_mosaic.jpg: 30/140, GraphCut seams=29, elapsed=21.9s
+Mosaic global_affine_mosaic.jpg: 40/140, GraphCut seams=39, elapsed=24.8s
+Mosaic global_affine_mosaic.jpg: 50/140, GraphCut seams=49, elapsed=28.7s
+Mosaic global_affine_mosaic.jpg: 60/140, GraphCut seams=59, elapsed=31.5s
+Mosaic global_affine_mosaic.jpg: 70/140, GraphCut seams=69, elapsed=33.7s
+Mosaic global_affine_mosaic.jpg: 80/140, GraphCut seams=79, elapsed=35.7s
+Mosaic global_affine_mosaic.jpg: 90/140, GraphCut seams=89, elapsed=38.9s
+Mosaic global_affine_mosaic.jpg: 100/140, GraphCut seams=99, elapsed=44.1s
+Mosaic global_affine_mosaic.jpg: 110/140, GraphCut seams=109, elapsed=48.0s
+Mosaic global_affine_mosaic.jpg: 120/140, GraphCut seams=119, elapsed=51.2s
+Mosaic global_affine_mosaic.jpg: 130/140, GraphCut seams=129, elapsed=54.4s
+Mosaic global_affine_mosaic.jpg: 140/140, GraphCut seams=139, elapsed=58.1s
+Mosaic global_projective_mosaic.jpg: 10/140, GraphCut seams=9, elapsed=12.0s
+Mosaic global_projective_mosaic.jpg: 20/140, GraphCut seams=19, elapsed=29.3s
+Mosaic global_projective_mosaic.jpg: 30/140, GraphCut seams=29, elapsed=38.4s
+Mosaic global_projective_mosaic.jpg: 40/140, GraphCut seams=39, elapsed=40.6s
+Mosaic global_projective_mosaic.jpg: 50/140, GraphCut seams=49, elapsed=43.0s
+Mosaic global_projective_mosaic.jpg: 60/140, GraphCut seams=59, elapsed=48.6s
+Mosaic global_projective_mosaic.jpg: 70/140, GraphCut seams=69, elapsed=51.5s
+Mosaic global_projective_mosaic.jpg: 80/140, GraphCut seams=79, elapsed=54.3s
+Mosaic global_projective_mosaic.jpg: 90/140, GraphCut seams=89, elapsed=57.2s
+Mosaic global_projective_mosaic.jpg: 100/140, GraphCut seams=99, elapsed=59.9s
+Mosaic global_projective_mosaic.jpg: 110/140, GraphCut seams=109, elapsed=64.9s
+Mosaic global_projective_mosaic.jpg: 120/140, GraphCut seams=119, elapsed=67.5s
+Mosaic global_projective_mosaic.jpg: 130/140, GraphCut seams=129, elapsed=69.5s
+Mosaic global_projective_mosaic.jpg: 140/140, GraphCut seams=139, elapsed=71.8s
+RUN_COMPLETED in 140.24 seconds

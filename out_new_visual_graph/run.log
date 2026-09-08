@@ -1,0 +1,246 @@
+Python = C:\Users\Lenovo\.conda\envs\uav_gtsam\python.exe
+OpenCV = 5.0.0
+Output = D:\UAV_Graph\out_new_visual_graph
+Synchronized pairs = 70, images = 140, P/grid = (40, 5, 8)
+Pair 1/70 frame=0: candidates=0, verified=0, parent=-, image_edges=1, elapsed=1.8s
+Pair 2/70 frame=1: candidates=1, verified=1, parent=0, image_edges=4, elapsed=4.6s
+Pair 3/70 frame=2: candidates=2, verified=2, parent=1, image_edges=9, elapsed=8.5s
+Pair 4/70 frame=3: candidates=2, verified=1, parent=2, image_edges=12, elapsed=12.5s
+Pair 5/70 frame=4: candidates=3, verified=2, parent=2, image_edges=17, elapsed=17.8s
+Pair 6/70 frame=5: candidates=3, verified=2, parent=4, image_edges=22, elapsed=22.9s
+Pair 7/70 frame=6: candidates=3, verified=1, parent=5, image_edges=25, elapsed=27.9s
+Pair 8/70 frame=7: candidates=3, verified=1, parent=6, image_edges=28, elapsed=33.0s
+Pair 9/70 frame=8: candidates=3, verified=2, parent=7, image_edges=33, elapsed=38.7s
+Pair 10/70 frame=9: candidates=3, verified=2, parent=8, image_edges=37, elapsed=44.3s
+Pair 11/70 frame=10: candidates=3, verified=1, parent=9, image_edges=40, elapsed=50.1s
+Pair 12/70 frame=11: candidates=3, verified=2, parent=10, image_edges=45, elapsed=55.8s
+Pair 13/70 frame=12: candidates=3, verified=2, parent=11, image_edges=50, elapsed=61.5s
+Pair 14/70 frame=13: candidates=3, verified=2, parent=12, image_edges=55, elapsed=67.9s
+Pair 15/70 frame=14: candidates=3, verified=2, parent=13, image_edges=60, elapsed=73.8s
+Pair 16/70 frame=15: candidates=4, verified=3, parent=14, image_edges=67, elapsed=81.1s
+Pair 17/70 frame=16: candidates=4, verified=3, parent=14, image_edges=74, elapsed=88.5s
+Pair 18/70 frame=17: candidates=6, verified=2, parent=15, image_edges=79, elapsed=98.8s
+Pair 19/70 frame=18: candidates=5, verified=3, parent=17, image_edges=86, elapsed=107.3s
+Pair 20/70 frame=19: candidates=7, verified=4, parent=18, image_edges=94, elapsed=118.4s
+Pair 21/70 frame=20: candidates=5, verified=3, parent=19, image_edges=101, elapsed=127.0s
+Pair 22/70 frame=21: candidates=8, verified=2, parent=20, image_edges=106, elapsed=139.3s
+Pair 23/70 frame=22: candidates=6, verified=4, parent=21, image_edges=112, elapsed=148.9s
+Pair 24/70 frame=23: candidates=5, verified=3, parent=22, image_edges=118, elapsed=157.2s
+Pair 25/70 frame=24: candidates=9, verified=5, parent=23, image_edges=128, elapsed=170.1s
+Pair 26/70 frame=25: candidates=8, verified=5, parent=24, image_edges=137, elapsed=182.1s
+Pair 27/70 frame=26: candidates=8, verified=3, parent=25, image_edges=144, elapsed=194.1s
+Pair 28/70 frame=27: candidates=11, verified=4, parent=26, image_edges=153, elapsed=209.8s
+Pair 29/70 frame=28: candidates=6, verified=2, parent=27, image_edges=158, elapsed=219.6s
+Pair 30/70 frame=29: candidates=4, verified=3, parent=28, image_edges=165, elapsed=227.0s
+Pair 31/70 frame=30: candidates=3, verified=3, parent=29, image_edges=172, elapsed=233.1s
+Pair 32/70 frame=31: candidates=5, verified=2, parent=30, image_edges=177, elapsed=241.6s
+Pair 33/70 frame=32: candidates=3, verified=2, parent=31, image_edges=182, elapsed=248.1s
+Pair 34/70 frame=33: candidates=6, verified=3, parent=32, image_edges=189, elapsed=258.2s
+Pair 35/70 frame=34: candidates=8, verified=4, parent=33, image_edges=197, elapsed=270.5s
+Pair 36/70 frame=35: candidates=8, verified=5, parent=34, image_edges=207, elapsed=282.7s
+Pair 37/70 frame=36: candidates=11, verified=5, parent=35, image_edges=218, elapsed=297.8s
+Pair 38/70 frame=37: candidates=11, verified=8, parent=36, image_edges=227, elapsed=313.8s
+Pair 39/70 frame=38: candidates=9, verified=6, parent=36, image_edges=238, elapsed=327.1s
+Pair 40/70 frame=39: candidates=9, verified=5, parent=38, image_edges=249, elapsed=340.5s
+Pair 41/70 frame=40: candidates=9, verified=5, parent=39, image_edges=260, elapsed=354.3s
+Pair 42/70 frame=41: candidates=8, verified=3, parent=40, image_edges=267, elapsed=366.5s
+Pair 43/70 frame=42: candidates=6, verified=2, parent=40, image_edges=272, elapsed=376.4s
+Pair 44/70 frame=43: candidates=5, verified=2, parent=42, image_edges=276, elapsed=384.8s
+Pair 45/70 frame=44: candidates=3, verified=3, parent=43, image_edges=283, elapsed=390.7s
+Pair 46/70 frame=45: candidates=5, verified=2, parent=44, image_edges=288, elapsed=398.8s
+Pair 47/70 frame=46: candidates=6, verified=2, parent=45, image_edges=293, elapsed=408.1s
+Pair 48/70 frame=47: candidates=8, verified=4, parent=45, image_edges=302, elapsed=420.1s
+Pair 49/70 frame=48: candidates=11, verified=5, parent=47, image_edges=312, elapsed=435.4s
+Pair 50/70 frame=49: candidates=10, verified=3, parent=48, image_edges=318, elapsed=449.5s
+Pair 51/70 frame=50: candidates=11, verified=4, parent=49, image_edges=325, elapsed=465.9s
+Pair 52/70 frame=51: candidates=12, verified=5, parent=50, image_edges=334, elapsed=483.9s
+Pair 53/70 frame=52: candidates=8, verified=5, parent=51, image_edges=343, elapsed=496.2s
+Pair 54/70 frame=53: candidates=9, verified=5, parent=52, image_edges=353, elapsed=508.0s
+Pair 55/70 frame=54: candidates=9, verified=4, parent=53, image_edges=362, elapsed=519.9s
+Pair 56/70 frame=55: candidates=6, verified=4, parent=54, image_edges=370, elapsed=528.5s
+Pair 57/70 frame=56: candidates=7, verified=2, parent=55, image_edges=375, elapsed=538.0s
+Pair 58/70 frame=57: candidates=6, verified=2, parent=56, image_edges=380, elapsed=546.7s
+Pair 59/70 frame=58: candidates=8, verified=3, parent=57, image_edges=387, elapsed=557.4s
+Pair 60/70 frame=59: candidates=7, verified=3, parent=58, image_edges=394, elapsed=567.1s
+Pair 61/70 frame=60: candidates=7, verified=3, parent=59, image_edges=400, elapsed=577.0s
+Pair 62/70 frame=61: candidates=5, verified=4, parent=60, image_edges=409, elapsed=584.5s
+Pair 63/70 frame=62: candidates=10, verified=6, parent=61, image_edges=419, elapsed=597.3s
+Pair 64/70 frame=63: candidates=6, verified=4, parent=62, image_edges=427, elapsed=605.8s
+Pair 65/70 frame=64: candidates=10, verified=5, parent=63, image_edges=437, elapsed=618.5s
+Pair 66/70 frame=65: candidates=8, verified=4, parent=64, image_edges=445, elapsed=629.2s
+Pair 67/70 frame=66: candidates=11, verified=4, parent=65, image_edges=454, elapsed=643.1s
+Pair 68/70 frame=67: candidates=7, verified=4, parent=66, image_edges=462, elapsed=652.7s
+Pair 69/70 frame=68: candidates=9, verified=4, parent=67, image_edges=470, elapsed=664.4s
+Pair 70/70 frame=69: candidates=6, verified=4, parent=68, image_edges=478, elapsed=673.0s
+
+============================================================
+INCREMENTAL GRAPH CONSTRUCTION
+============================================================
+Stereo pairs = 70
+Images = 140
+Sequential pair candidates = 203
+Retrieval pair candidates = 237
+Verified pair relations = 225
+Tree relations = 69
+Strong relations = 85
+Loop relations = 64
+
+============================================================
+IMAGE OPTIMIZATION GRAPH
+============================================================
+Nodes = 140
+Intra-pair ordinary edges = 70
+Tree ordinary edges = 138
+Strong ordinary edges = 161
+Loop ordinary edges = 109
+Total ordinary edges = 478
+Connected components = 1
+Degree min/median/mean/max = 3/7.0/6.829/11
+IMPORTANT:
+All optimization edges are ordinary = True
+Stereo-special edges = 0
+
+============================================================
+GLOBAL AFFINE OPTIMIZATION
+============================================================
+Component=0, N=140, reference=left:0
+M = 478
+P = 40
+solver = sparse linear LSMR
+RMSE before = 215.1488656845922
+RMSE after = 16.828045621091274
+
+============================================================
+GLOBAL PROJECTIVE OPTIMIZATION
+============================================================
+Objective: Eproj = E_match/(M*P) + 800 * E_rigid/N
+sigma_tr = 5000
+No GPS prior
+No stereo residual
+No safety penalty
+No robust loss
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1         7.3065e+02                                    4.99e+05    
+       1              3         4.1075e+02      3.20e+02       1.64e+00       1.30e+06    
+       2              4         2.4336e+02      1.67e+02       3.43e+00       2.84e+06    
+       3              5         5.3687e+01      1.90e+02       2.57e-01       3.05e+04    
+       4              6         5.3322e+01      3.65e-01       3.99e-01       2.39e+05    
+       5              7         5.2808e+01      5.14e-01       2.41e-02       9.03e+02    
+       6              8         5.2806e+01      1.56e-03       1.37e-02       5.09e+02    
+       7              9         5.2806e+01      1.89e-04       3.49e-03       1.69e+02    
+       8             10         5.2806e+01      4.83e-05       1.14e-03       1.47e+02    
+       9             11         5.2806e+01      1.99e-05       5.15e-04       6.53e+01    
+      10             12         5.2806e+01      1.36e-05       3.89e-04       9.91e+01    
+      11             13         5.2806e+01      1.07e-05       2.90e-04       5.23e+01    
+      12             14         5.2806e+01      7.39e-06       2.02e-04       6.21e+01    
+      13             15         5.2806e+01      6.15e-06       1.70e-04       3.85e+01    
+      14             16         5.2806e+01      5.54e-06       1.61e-04       4.52e+01    
+      15             17         5.2806e+01      5.21e-06       1.50e-04       3.44e+01    
+      16             18         5.2806e+01      4.87e-06       1.45e-04       3.86e+01    
+      17             19         5.2806e+01      4.54e-06       1.33e-04       3.09e+01    
+      18             20         5.2806e+01      4.11e-06       1.24e-04       3.28e+01    
+      19             21         5.2806e+01      3.72e-06       1.10e-04       2.77e+01    
+      20             22         5.2806e+01      3.41e-06       1.03e-04       2.72e+01    
+      21             23         5.2806e+01      3.08e-06       9.17e-05       2.44e+01    
+      22             24         5.2806e+01      3.08e-06       9.41e-05       2.78e+01    
+      23             25         5.2806e+01      2.82e-06       8.17e-05       2.11e+01    
+      24             26         5.2806e+01      2.72e-06       8.56e-05       2.70e+01    
+      25             27         5.2806e+01      2.63e-06       7.57e-05       1.91e+01    
+      26             28         5.2806e+01      2.56e-06       8.14e-05       2.65e+01    
+      27             29         5.2806e+01      2.41e-06       6.98e-05       1.75e+01    
+      28             30         5.2806e+01      2.45e-06       7.97e-05       2.67e+01    
+      29             31         5.2806e+01      2.33e-06       6.71e-05       1.62e+01    
+      30             32         5.2806e+01      2.38e-06       7.90e-05       2.68e+01    
+      31             33         5.2806e+01      2.30e-06       6.57e-05       1.49e+01    
+      32             34         5.2806e+01      2.21e-06       7.52e-05       2.47e+01    
+      33             35         5.2806e+01      2.18e-06       6.36e-05       1.39e+01    
+      34             36         5.2806e+01      2.12e-06       7.28e-05       2.45e+01    
+      35             37         5.2806e+01      2.10e-06       6.18e-05       1.36e+01    
+      36             38         5.2806e+01      2.10e-06       7.22e-05       2.51e+01    
+      37             39         5.2806e+01      2.00e-06       5.90e-05       1.25e+01    
+      38             40         5.2806e+01      1.83e-06       6.49e-05       2.19e+01    
+      39             41         5.2806e+01      1.82e-06       5.54e-05       1.20e+01    
+      40             42         5.2806e+01      1.73e-06       6.14e-05       2.29e+01    
+      41             43         5.2806e+01      1.71e-06       5.29e-05       1.18e+01    
+      42             44         5.2806e+01      1.48e-06       5.36e-05       2.00e+01    
+      43             45         5.2806e+01      1.56e-06       5.09e-05       1.23e+01    
+      44             46         5.2806e+01      1.37e-06       4.89e-05       1.76e+01    
+      45             47         5.2806e+01      1.34e-06       4.66e-05       1.24e+01    
+      46             48         5.2806e+01      1.40e-06       4.99e-05       1.91e+01    
+      47             49         5.2806e+01      1.34e-06       4.58e-05       1.20e+01    
+      48             50         5.2806e+01      1.35e-06       4.89e-05       1.88e+01    
+      49             51         5.2806e+01      1.27e-06       4.39e-05       1.14e+01    
+      50             52         5.2806e+01      1.27e-06       4.76e-05       1.87e+01    
+      51             53         5.2806e+01      1.25e-06       4.38e-05       1.14e+01    
+      52             54         5.2806e+01      1.14e-06       4.38e-05       1.68e+01    
+      53             55         5.2806e+01      1.12e-06       4.14e-05       1.18e+01    
+      54             56         5.2806e+01      1.10e-06       4.27e-05       1.65e+01    
+      55             57         5.2806e+01      1.19e-06       4.42e-05       1.32e+01    
+      56             58         5.2806e+01      1.08e-06       4.15e-05       1.47e+01    
+      57             59         5.2806e+01      1.14e-06       4.41e-05       1.39e+01    
+      58             60         5.2806e+01      1.05e-06       4.00e-05       1.32e+01    
+      59             61         5.2806e+01      1.05e-06       4.28e-05       1.43e+01    
+      60             62         5.2806e+01      9.60e-07       3.74e-05       1.09e+01    
+      61             63         5.2806e+01      8.75e-07       3.81e-05       1.37e+01    
+      62             64         5.2806e+01      9.65e-07       3.83e-05       1.15e+01    
+      63             65         5.2806e+01      8.76e-07       3.70e-05       1.26e+01    
+      64             66         5.2806e+01      8.41e-07       3.51e-05       1.06e+01    
+      65             67         5.2806e+01      8.92e-07       3.78e-05       1.38e+01    
+      66             68         5.2806e+01      8.33e-07       3.41e-05       9.29e+00    
+      67             69         5.2806e+01      7.78e-07       3.44e-05       1.32e+01    
+      68             70         5.2806e+01      8.56e-07       3.52e-05       9.80e+00    
+      69             71         5.2806e+01      7.46e-07       3.21e-05       1.16e+01    
+      70             72         5.2806e+01      7.84e-07       3.39e-05       1.04e+01    
+      71             73         5.2806e+01      7.84e-07       3.26e-05       1.20e+01    
+      72             74         5.2806e+01      6.95e-07       3.08e-05       9.91e+00    
+      73             75         5.2806e+01      7.87e-07       3.35e-05       1.41e+01    
+      74             76         5.2806e+01      6.62e-07       2.87e-05       8.69e+00    
+      75             77         5.2806e+01      7.01e-07       3.18e-05       1.53e+01    
+      76             78         5.2806e+01      6.63e-07       2.83e-05       8.31e+00    
+      77             79         5.2806e+01      6.38e-07       2.98e-05       1.51e+01    
+      78             80         5.2806e+01      6.85e-07       2.93e-05       8.73e+00    
+      79             81         5.2806e+01      6.35e-07       2.90e-05       1.40e+01    
+      80             82         5.2806e+01      7.03e-07       3.06e-05       9.35e+00    
+      81             83         5.2806e+01      6.26e-07       2.77e-05       1.24e+01    
+      82             84         5.2806e+01      6.09e-07       2.83e-05       9.12e+00    
+      83             85         5.2806e+01      6.22e-07       2.76e-05       1.26e+01    
+      84             86         5.2806e+01      5.42e-07       2.58e-05       8.22e+00    
+      85             87         5.2806e+01      6.53e-07       2.94e-05       1.47e+01    
+      86             88         5.2806e+01      6.10e-07       2.69e-05       8.66e+00    
+      87             89         5.2806e+01      5.23e-07       2.51e-05       1.22e+01    
+`ftol` termination condition is satisfied.
+Function evaluations 89, initial cost 7.3065e+02, final cost 5.2806e+01, first-order optimality 1.22e+01.
+{
+  "stage": "projective",
+  "solver": "TRF/LSMR analytic sparse Jacobian",
+  "nfev": 89,
+  "njev": 88,
+  "cost": 52.806078968901986,
+  "optimality": 12.227411311243271,
+  "status": 2,
+  "message": "`ftol` termination condition is satisfied.",
+  "converged": true,
+  "finite": "True",
+  "runtime": 8.765295699995477,
+  "M": 478,
+  "P": 40,
+  "N": 140,
+  "omega_rigid": 800.0,
+  "sigma_tr": 5000.0,
+  "data_energy_before": 1023.2952179396996,
+  "rigid_energy_before": 0.5475068010614883,
+  "global_energy_before": 1461.3006587888901,
+  "data_energy_after": 77.04680564014333,
+  "rigid_energy_after": 0.03570669037207578,
+  "global_energy_after": 105.61215793780396
+}
+
+All-RANSAC paper-style and selected-P metrics:
+     stage             points  count       rmse       mean    median        p90        p95         max
+   initial all_RANSAC_inliers 686705 215.148866 100.099250 33.023497 228.083586 532.520951 1317.750138
+   initial         selected_P  19120 228.082207 106.455280 27.542088 281.671892 607.265655 1317.750138
+    affine all_RANSAC_inliers 686705  16.828046   8.487813  4.387740  17.209826  27.435618  256.418063
+    affine         selected_P  19120  31.988986  20.281957 11.943555  48.767823  70.595336  254.450170
+projective all_RANSAC_inliers 686705   4.522367   3.091986  2.027199   6.793654   9.202817   79.976654
+projective         selected_P  19120   8.777631   6.633421  5.154815  13.690955  17.563689   79.976654
+Mosaic global_affine_mosaic.jpg: 10/140, GraphCut seams=9, elapsed=84.6s

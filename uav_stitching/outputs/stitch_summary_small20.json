@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "method": "opencv_graphcut_engineering_equivalent",
+  "frame_to_frame": true,
+  "exposure_compensation": false,
+  "image_count": 20,
+  "reference_image": 35,
+  "order": [
+    35,
+    34,
+    33,
+    32,
+    31,
+    30,
+    29,
+    28,
+    27,
+    26,
+    25,
+    24,
+    36,
+    37,
+    23,
+    22,
+    21,
+    38,
+    39,
+    40
+  ],
+  "full_resolution_canvas": {
+    "width": 6779,
+    "height": 11606
+  },
+  "output_canvas": {
+    "width": 1695,
+    "height": 2902
+  },
+  "output_scale": 0.25,
+  "seam_scale": 0.1,
+  "covered_pixels": 3903135,
+  "coverage_ratio": 0.7934991430993578,
+  "elapsed_seconds": 16.053917800003546,
+  "steps": [
+    {
+      "step": 0,
+      "image_id": 35,
+      "overlap_pixels_at_seam_scale": 0,
+      "seam_method": "initial",
+      "elapsed_seconds": 0.2056633000029251
+    },
+    {
+      "step": 1,
+      "image_id": 34,
+      "overlap_pixels_at_seam_scale": 167931,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 1.6017263999965508
+    },
+    {
+      "step": 2,
+      "image_id": 33,
+      "overlap_pixels_at_seam_scale": 164200,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 1.045751100005873
+    },
+    {
+      "step": 3,
+      "image_id": 32,
+      "overlap_pixels_at_seam_scale": 155866,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.5824466999983997
+    },
+    {
+      "step": 4,
+      "image_id": 31,
+      "overlap_pixels_at_seam_scale": 155677,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.5973957000023802
+    },
+    {
+      "step": 5,
+      "image_id": 30,
+      "overlap_pixels_at_seam_scale": 141769,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.6297230000054697
+    },
+    {
+      "step": 6,
+      "image_id": 29,
+      "overlap_pixels_at_seam_scale": 135841,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.6970394000018132
+    },
+    {
+      "step": 7,
+      "image_id": 28,
+      "overlap_pixels_at_seam_scale": 150082,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.43845889999647625
+    },
+    {
+      "step": 8,
+      "image_id": 27,
+      "overlap_pixels_at_seam_scale": 145239,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.6001651999977184
+    },
+    {
+      "step": 9,
+      "image_id": 26,
+      "overlap_pixels_at_seam_scale": 156663,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.34536419999494683
+    },
+    {
+      "step": 10,
+      "image_id": 25,
+      "overlap_pixels_at_seam_scale": 167294,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.20760679999511922
+    },
+    {
+      "step": 11,
+      "image_id": 24,
+      "overlap_pixels_at_seam_scale": 173148,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.191723700001603
+    },
+    {
+      "step": 12,
+      "image_id": 36,
+      "overlap_pixels_at_seam_scale": 173730,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 2.943156799999997
+    },
+    {
+      "step": 13,
+      "image_id": 37,
+      "overlap_pixels_at_seam_scale": 175280,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 1.9368433999989065
+    },
+    {
+      "step": 14,
+      "image_id": 23,
+      "overlap_pixels_at_seam_scale": 173276,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.20043520000035642
+    },
+    {
+      "step": 15,
+      "image_id": 22,
+      "overlap_pixels_at_seam_scale": 168325,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.18616990000009537
+    },
+    {
+      "step": 16,
+      "image_id": 21,
+      "overlap_pixels_at_seam_scale": 189391,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.6154638000007253
+    },
+    {
+      "step": 17,
+      "image_id": 38,
+      "overlap_pixels_at_seam_scale": 177358,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 2.118204299993522
+    },
+    {
+      "step": 18,
+      "image_id": 39,
+      "overlap_pixels_at_seam_scale": 169768,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.444406099995831
+    },
+    {
+      "step": 19,
+      "image_id": 40,
+      "overlap_pixels_at_seam_scale": 153655,
+      "seam_method": "opencv_graphcut",
+      "elapsed_seconds": 0.4102783999987878
+    }
+  ]
+}

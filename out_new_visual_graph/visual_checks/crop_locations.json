@@ -1,0 +1,38 @@
+[
+  {
+    "edge_i": "right:38",
+    "edge_j": "right:37",
+    "stage": "affine",
+    "x": 2192,
+    "y": 1399,
+    "width": 900,
+    "height": 700
+  },
+  {
+    "edge_i": "right:38",
+    "edge_j": "right:37",
+    "stage": "projective",
+    "x": 2650,
+    "y": 2164,
+    "width": 900,
+    "height": 700
+  },
+  {
+    "edge_i": "left:33",
+    "edge_j": "left:23",
+    "stage": "affine",
+    "x": 1074,
+    "y": 2842,
+    "width": 900,
+    "height": 700
+  },
+  {
+    "edge_i": "left:33",
+    "edge_j": "left:23",
+    "stage": "projective",
+    "x": 1236,
+    "y": 4068,
+    "width": 900,
+    "height": 700
+  }
+]
