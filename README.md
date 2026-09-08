@@ -1,4 +1,4 @@
-# UAV_Graph
+# StereoUAV-Graph-Stitching
 
 Incremental visual-graph registration and binocular UAV image stitching with stereo constraints and global optimization.
 

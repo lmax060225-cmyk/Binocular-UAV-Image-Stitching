@@ -1,10 +1,10 @@
-# UAV_Graph
+# StereoUAV-Graph-Stitching
 
 ## GPS-guided image stitching
 
 This subproject provides an engineering implementation of *Large-scale UAV image stitching based on global registration optimization and graph-cut method* by Zhongxing Wang, Zhizhong Fu, and Jin Xu (*Journal of Visual Communication and Image Representation*, 107, 104354, 2025).
 
-[Paper DOI](https://doi.org/10.1016/j.jvcir.2024.104354) · [Publisher page](https://www.sciencedirect.com/science/article/pii/S1047320324003109) · [Repository](https://github.com/lmax060225-cmyk/UAV_Graph)
+[Paper DOI](https://doi.org/10.1016/j.jvcir.2024.104354) · [Publisher page](https://www.sciencedirect.com/science/article/pii/S1047320324003109) · [Repository](https://github.com/lmax060225-cmyk/StereoUAV-Graph-Stitching)
 
 The pipeline uses GPS metadata to select neighboring image pairs, estimates a global affine registration, refines it with projective transformations and rigid regularization, and blends the registered images using sequential graph-cut seams. Feature and match caches can be reused when their inputs and configuration remain valid.
 
@@ -13,8 +13,8 @@ The pipeline uses GPS metadata to select neighboring image pairs, estimates a gl
 Use Python 3.10 or later in a dedicated environment. For example, with Conda:
 
 ```sh
-git clone https://github.com/lmax060225-cmyk/UAV_Graph.git
-cd UAV_Graph/uav_stitching
+git clone https://github.com/lmax060225-cmyk/StereoUAV-Graph-Stitching.git
+cd StereoUAV-Graph-Stitching/uav_stitching
 conda create -n uav-stitching python=3.11 -y
 conda activate uav-stitching
 python -m pip install -r requirements.txt
@@ -46,7 +46,7 @@ Exposure compensation is disabled by default. To retain the published results wh
 
 ## Running the pipeline
 
-Run these commands from `UAV_Graph/uav_stitching/` after activating your environment and configuring the dataset.
+Run these commands from `StereoUAV-Graph-Stitching/uav_stitching/` after activating your environment and configuring the dataset.
 
 Run all stages:
 
