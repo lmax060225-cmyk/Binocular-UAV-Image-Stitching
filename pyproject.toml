@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stereo-uav-graph-stitching"
+version = "0.1.0"
+description = "Visual-graph and block-incremental stereo UAV image registration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "opencv-python>=4.8", "pandas>=2.0", "tqdm>=4.65"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+uav-visual-graph = "stereo_uav.visual_graph.cli:main"
+uav-stereo-backbone = "stereo_uav.backbone.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/__init__.py" = ["F401"]

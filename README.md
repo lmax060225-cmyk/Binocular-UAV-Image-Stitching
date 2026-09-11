@@ -1,42 +1,100 @@
 # StereoUAV-Graph-Stitching
 
-Incremental visual-graph registration and binocular UAV image stitching with stereo constraints and global optimization.
+Two visual-only algorithms for synchronized binocular UAV image registration and mosaicking.
 
-This repository collects three related implementations for large-scale UAV image registration and mosaicking:
+| Algorithm | Registration strategy | Stereo treatment |
+|---|---|---|
+| **Incremental visual graph** | Build a visual graph incrementally, then solve all images in each connected component | Every verified image edge uses an ordinary 2D correspondence residual |
+| **Rigid-stereo similarity backbone** | Register four-image blocks and refine a persistent two-block window | Separate normal-displacement, relative-rotation, and relative-scale constraints |
 
-- `uav_stereo_incremental_visual_graph_global_registration.py`: incremental stereo visual-graph registration with ordinary, tree, strong, and loop edges, followed by global optimization and mosaic rendering.
-- `UAV_Binocular_Camera_block_incremental_rigid_stereo_similarity_backbone_core.py`: block-incremental binocular stitching with a rigid stereo similarity backbone.
-- `uav_stitching/`: a modular, reproducible stitching pipeline covering metadata association, GPS-neighbor graph construction, feature matching, affine and projective optimization, warping, Graph-Cut seams, blending, and evaluation.
+Read the [algorithm definitions and comparison](docs/algorithms.md) for the exact
+objectives, propagation rules, assumptions, and limitations. The first stage is
+called `affine` in legacy outputs, but both implementations use a four-parameter
+similarity model in that stage.
 
-## Repository scope
+## Installation
 
-The repository includes source code, configuration, documentation, and saved results from the GPS-guided and independent visual-graph pipelines. Published results include mosaics, masks, metrics, and selected diagnostic artifacts. Raw input images and the `uav_stitching/cache/` and `uav_stitching/debug/` directories are not included.
+Python 3.10 or newer is required. From the repository root:
 
-See [`uav_stitching/README.md`](uav_stitching/README.md) for GPS-guided pipeline setup, commands, implementation scope, and recorded results. Its dependencies and configuration apply to that subproject; the two standalone scripts have separate entry points.
+```sh
+python -m pip install -e ".[test]"
+```
+
+Runtime dependencies are NumPy, SciPy, OpenCV, pandas, and tqdm. The OpenCV build
+must expose SIFT and the Graph-Cut seam finder for Graph-Cut rendering. Raw input
+images are not distributed. Put synchronized images in separate left/right folders.
+For both methods, use matching purely numeric stems such as `000001.png` and
+`000002.png`. The visual-graph loader reads the leading integer; the backbone loader
+reads the last numeric group. Filenames with additional camera or timestamp numbers
+can therefore synchronize differently between the two loaders.
+
+## Run the visual-graph algorithm
+
+```sh
+python uav_stereo_incremental_visual_graph_global_registration.py --left data/left --right data/right --output outputs/visual_graph
+```
+
+After installation, `uav-visual-graph` provides the same CLI. Use `--self-test` for
+the numerical/topology self-tests. Use `--resume-graph` with the same output and
+unchanged input files to replay a saved final graph; provenance and configuration
+are checked before reuse. A fresh run refuses to overwrite an existing saved graph.
+
+## Run the similarity-backbone algorithm
+
+```sh
+python UAV_Binocular_Camera_block_incremental_rigid_stereo_similarity_backbone_core.py --left data/left --right data/right --output outputs/backbone
+```
+
+After installation, the equivalent command is `uav-stereo-backbone`. Add `--graphcut`
+to enable seam selection; the original ordered-overwrite compositing remains the
+default. The CLI requires an empty output directory. Review block status reports:
+a final image alone is not evidence that every block registered successfully.
 
 ## Results
 
-### GPS-guided stitching
+### Visual graph: archived 140-image experiment
 
-The `uav_stitching` pipeline uses GPS metadata to construct the image-neighbor graph before global affine/projective registration and Graph-Cut blending. Metrics, masks, and reduced-size validation runs are available in [`uav_stitching/outputs`](uav_stitching/outputs).
+The preserved experiment contains 70 stereo pairs, 478 image edges, and one
+connected component. Pooled all-RANSAC-inlier RMSE was **215.149 → 16.828 → 4.522 px**
+for initialization, similarity, and projective registration, respectively. These
+are historical measurements, not a new full-dataset benchmark after refactoring.
 
-![GPS-guided final mosaic](uav_stitching/outputs/final_mosaic.jpg)
+![Archived projective mosaic](results/visual_graph/mosaics/global_projective_mosaic_preview.jpg)
 
-### Incremental visual-graph registration
+[Experiment report](results/visual_graph/implementation_report.md) ·
+[Metrics and transformations](results/visual_graph/data) ·
+[Local visual diagnostics](results/visual_graph/visual_checks)
 
-The independent visual-graph pipeline builds and optimizes image-registration edges directly. Its full run artifacts—including graph diagnostics, transforms, verification summaries, masks, and mosaics—are available in [`out_new_visual_graph`](out_new_visual_graph). See the [implementation report](out_new_visual_graph/implementation_report.md) for details.
+The image retains visible local seam/brightness differences and an irregular
+coverage boundary. Pooled registration error does not measure geographic accuracy
+or establish that every overlap is seamless.
 
-Projective result:
+### Similarity backbone: refactor validation
 
-![Visual-graph global projective mosaic](out_new_visual_graph/mosaics/global_projective_mosaic.jpg)
+The refactor was checked on three consecutive real stereo pairs, resized to an
+800-pixel longest side. The original and reorganized implementations produced
+matching numerical CSV outputs and a pixel-identical final mosaic. This bounded
+integration check is not a full-sequence accuracy evaluation or a comparison
+against the visual-graph method. See [validation evidence](docs/validation.md).
 
-Affine result:
+## Source organization
 
-![Visual-graph global affine mosaic](out_new_visual_graph/mosaics/global_affine_mosaic.jpg)
+- [`src/stereo_uav/visual_graph`](src/stereo_uav/visual_graph): feature verification, retrieval, topology, global optimization, reporting, and rendering.
+- [`src/stereo_uav/backbone`](src/stereo_uav/backbone): typed blocks, similarity initialization, projective corrections, persistent windows, and rendering.
+- [`tests`](tests): numerical, graph, stereo-residual, and propagation regression checks.
+- [`docs`](docs): algorithm definitions, migration guidance, and validation scope.
+- [`results`](results): reviewed experiment artifacts for these two algorithms.
 
-## Reference paper
+The original root script names remain as compatibility entry points. The repository
+contains only these two stereo methods and their supporting artifacts. See the
+[layout and migration guide](docs/repository_layout.md) for configuration and result paths.
 
-Zhongxing Wang, Zhizhong Fu, and Jin Xu, “Large-scale UAV image stitching based on global registration optimization and graph-cut method,” *Journal of Visual Communication and Image Representation*, vol. 107, article 104354, 2025.
+## Validation
 
-- DOI: [10.1016/j.jvcir.2024.104354](https://doi.org/10.1016/j.jvcir.2024.104354)
-- Publisher page: [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1047320324003109)
+```sh
+python -m pytest -q
+python uav_stereo_incremental_visual_graph_global_registration.py --self-test --output outputs/selftest
+```
+
+See [validation evidence and limits](docs/validation.md) before interpreting the
+archived experiment or the smoke run as an accuracy claim.

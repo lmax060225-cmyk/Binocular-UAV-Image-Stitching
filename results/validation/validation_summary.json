@@ -1,0 +1,210 @@
+{
+  "date": "2026-09-11",
+  "python": "3.11.16",
+  "opencv": "5.0.0",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "pandas": "3.0.5",
+  "tests_passed": 25,
+  "structural_definitions_checked": 163,
+  "differential_artifacts_checked": 41,
+  "backbone_mosaic_pixel_equal": true,
+  "visual_graph_smoke_completed": true,
+  "input_longest_side": 800,
+  "opencv_threads": 1,
+  "random_seed": 7,
+  "inputs": [
+    {
+      "source": "data_set_5/left/000000_DJI_20260731151309_0001_V.png",
+      "resized_name": "left/000000.png",
+      "resized_sha256": "8a95a962b6bbbfe69803c495ab4c87502023b12ca6195df471b86b95b5f2cfd7"
+    },
+    {
+      "source": "data_set_5/left/000001_DJI_20260731151313_0003_V.png",
+      "resized_name": "left/000001.png",
+      "resized_sha256": "5cfcd9258a4587db13bd196cd720104aedca154c1979d580952d23ffaf9862c1"
+    },
+    {
+      "source": "data_set_5/left/000002_DJI_20260731151315_0004_V.png",
+      "resized_name": "left/000002.png",
+      "resized_sha256": "cfffc11ea5e398bf53cbc9e7a31ccad036156c800c26e4e2c64478f94edc07b6"
+    },
+    {
+      "source": "data_set_5/right/000000_DJI_20260731151309_0001_V.png",
+      "resized_name": "right/000000.png",
+      "resized_sha256": "c78c02ec6634057a2900bfa860a4745a08488c1df93bfeb9cd70c132af709899"
+    },
+    {
+      "source": "data_set_5/right/000001_DJI_20260731151313_0003_V.png",
+      "resized_name": "right/000001.png",
+      "resized_sha256": "6706b08a67d11ca43b2506d88c5db57cff164f0679acaaa563445992e6f4cf10"
+    },
+    {
+      "source": "data_set_5/right/000002_DJI_20260731151315_0004_V.png",
+      "resized_name": "right/000002.png",
+      "resized_sha256": "e79f8d7ca7fdb6f3450051319f79202d6da190ac72539ed4c039b3978c5f4a3b"
+    }
+  ],
+  "unchanged_archived_artifacts": [
+    {
+      "file": "results/visual_graph/data/edge_registration_metrics.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "633b752a112254ee48fd33270bfccd79bd2fc025dcfeb0b856006cb0650ccdf9"
+    },
+    {
+      "file": "results/visual_graph/data/global_affine_transforms.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "0710d068480739f081854c5398022639cf76fdf3562f0d60182dfc4d65e04360"
+    },
+    {
+      "file": "results/visual_graph/data/global_projective_transforms.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "d13bd525f435cfde73d9bf4ad96a73a77f907a5f764613d468b3066606e2e223"
+    },
+    {
+      "file": "results/visual_graph/data/graph_config.json",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "97130d8c5d7169620ee736b5a08490b2acc602e6e46e9f3d9a920711d0d60748"
+    },
+    {
+      "file": "results/visual_graph/data/graph_summary.json",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "cf295860060bcb1078e8d5c092f3eec73a00072842689a5887fa65f50fb45880"
+    },
+    {
+      "file": "results/visual_graph/data/image_optimization_graph.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "5387ae51be78cc7aafd73c062e37227297d6fe5c66846da39efb703ff2ba6e4d"
+    },
+    {
+      "file": "results/visual_graph/data/initial_traversal_transforms.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "1eb0ad818a5a4f472fded8def455844453cc4b3a5129db2651d05182c5cb3ed5"
+    },
+    {
+      "file": "results/visual_graph/data/input_manifest.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "551acb2970680273381bd4f865ab148e728ff706f64fd66d20a09140fd4dadfb"
+    },
+    {
+      "file": "results/visual_graph/data/matching_diagnostics.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "10ee5c279566148f5a8c49d51e07eab1e9e685675dab2e00a66a608cf06b22f6"
+    },
+    {
+      "file": "results/visual_graph/data/mosaic_summary.json",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "12d089eddb0172d649b4b803132e9a024af199154591926ef30aadbff9564e26"
+    },
+    {
+      "file": "results/visual_graph/data/optimization_observations.npz",
+      "comparison": "binary-exact",
+      "sha256": "fae63a99e4830571736b54ef0f2604eeefe0ca80b79504cbbe9baa066e06b9bc"
+    },
+    {
+      "file": "results/visual_graph/data/optimizer_summary.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "af1f2e0043edab150bb6880232a3199299b73bba523fe7ea5e52eb1e40137d05"
+    },
+    {
+      "file": "results/visual_graph/data/pair_registration_status.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "9fe0c5cb779bf7ee6df8f06cdf561f67cd81782e72c5e6b0a1a469834f46f8b3"
+    },
+    {
+      "file": "results/visual_graph/data/pair_topology_graph.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "d86d3ecbe31abf20343e537daa72814246235853e298a65fec9393e9e78bb443"
+    },
+    {
+      "file": "results/visual_graph/data/registration_metrics_summary.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "80c1553ab0fd7d942ef19e122a33d2bdbefe92e32c8f5eeba8c318fb55c7d842"
+    },
+    {
+      "file": "results/visual_graph/data/retrieval_candidates.csv",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "48fddc9003d01d5528d5ca4ce46db176cd7beb6533b0712fb48cfb8e335e6d57"
+    },
+    {
+      "file": "results/visual_graph/data/verification_summary.json",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "a9ffb939a230b54b841715169e568ab38fafb6386138e8344a974fb1c9fe0b32"
+    },
+    {
+      "file": "results/visual_graph/graph_build_and_initial_render.log",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "4f4552b4954bfd9faa696154482d4cba92549e6c0e85911f43b800400a090c33"
+    },
+    {
+      "file": "results/visual_graph/mosaics/global_affine_mosaic.jpg",
+      "comparison": "binary-exact",
+      "sha256": "be2abea4c79ce2ffff2bbd333a98fb68ccdc88eae3cdea51f49a0a8f7b54b4ae"
+    },
+    {
+      "file": "results/visual_graph/mosaics/global_affine_mosaic_mask.png",
+      "comparison": "binary-exact",
+      "sha256": "db31d356080dd46142422236b38909f3bc5710820657f1aae5361f495468b040"
+    },
+    {
+      "file": "results/visual_graph/mosaics/global_affine_mosaic_preview.jpg",
+      "comparison": "binary-exact",
+      "sha256": "98a6a5e60ed7caa9c43293550230b137ec8326b26e0d7bbf0512166e0186769b"
+    },
+    {
+      "file": "results/visual_graph/mosaics/global_projective_mosaic.jpg",
+      "comparison": "binary-exact",
+      "sha256": "32d7f073bf680cb9cb8aae89c31a0dd7e397c5aabc4743d51df4dba23ccedf07"
+    },
+    {
+      "file": "results/visual_graph/mosaics/global_projective_mosaic_mask.png",
+      "comparison": "binary-exact",
+      "sha256": "8f010fae17b887220fea98f8b781f5eb4ec30e672c898a630804a6ed0a766f71"
+    },
+    {
+      "file": "results/visual_graph/mosaics/global_projective_mosaic_preview.jpg",
+      "comparison": "binary-exact",
+      "sha256": "f4c3f37075681d4bb242ad82c9ca23f954880941db8d47094070cf2b9559b44d"
+    },
+    {
+      "file": "results/visual_graph/run.log",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "4f4552b4954bfd9faa696154482d4cba92549e6c0e85911f43b800400a090c33"
+    },
+    {
+      "file": "results/visual_graph/run_resume.log",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "e00ed8fcd2e53dcdc5fb3b72bb64a249ca3e124733c56b230897ec95713d5f34"
+    },
+    {
+      "file": "results/visual_graph/run_summary.json",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "987b606abe0bfb20d3dedc8ca55ae3bcea8b89556b551d4801fb2ebaff813fdd"
+    },
+    {
+      "file": "results/visual_graph/self_test.log",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "9534b463af02fbff383b28f9f4039bb675e1c012393c072d8bf5a02cd40e57a7"
+    },
+    {
+      "file": "results/visual_graph/self_test_results.json",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "bb767dcf9f9c3fe7b7ac030638edb777d360ea86a23ad7d8b5722c4881e7c02b"
+    },
+    {
+      "file": "results/visual_graph/visual_checks/crop_locations.json",
+      "comparison": "text-with-LF-line-endings",
+      "sha256": "50bc8c00550358351adcb6ad61a33f58218c7f1f24b0df675775cc4d739ade34"
+    },
+    {
+      "file": "results/visual_graph/visual_checks/edge_left_33_left_23.jpg",
+      "comparison": "binary-exact",
+      "sha256": "493a26b0bcb00a9a6724a5a0a802b735f272573327edc2054ae4a3225fd49382"
+    },
+    {
+      "file": "results/visual_graph/visual_checks/edge_right_38_right_37.jpg",
+      "comparison": "binary-exact",
+      "sha256": "c1e423953ac050d967fab310797b614e5ba943ddfd1d2779dfa419253b595ad5"
+    }
+  ]
+}

@@ -1,17 +1,24 @@
-# This repository intentionally publishes only the selected UAV implementations.
+# Publish only the two stereo algorithms and their supporting artifacts.
 /*
 !/.gitignore
+!/.gitattributes
 !/README.md
+!/pyproject.toml
+!/requirements.txt
+!/src/
+!/tests/
+!/docs/
+!/results/
 !/uav_stereo_incremental_visual_graph_global_registration.py
 !/UAV_Binocular_Camera_block_incremental_rigid_stereo_similarity_backbone_core.py
-!/uav_stitching/
-!/out_new_visual_graph/
 
 # Generated Python and test artifacts
 **/__pycache__/
 **/*.py[cod]
 **/.pytest_cache/
 
-# Generated stitching artifacts and reusable caches
-/uav_stitching/cache/
-/uav_stitching/debug/
+# Local input images, experiments, environments, and editor state stay private.
+**/*.egg-info/
+**/.ruff_cache/
+**/.DS_Store
+**/Thumbs.db
