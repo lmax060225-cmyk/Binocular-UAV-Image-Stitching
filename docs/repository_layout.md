@@ -30,26 +30,27 @@ The root scripts are compatibility entry points and re-export the corresponding
 package APIs. Import new code from `stereo_uav.visual_graph` or
 `stereo_uav.backbone`. The implementations remain separate: their edge semantics,
 state representations, objectives, and matching policies are not interchangeable.
+The published project/distribution name is `binocular-uav-image-stitching`; the
+existing `stereo_uav` Python import package and CLI names remain compatibility APIs.
 
 The complete former `uav_stitching/` project, including its code, configuration,
 documentation, and generated results, is removed from the repository. No monocular
 algorithm is published. Raw data, local experiments, editor settings, and unrelated
 files are excluded by the root allowlist in `.gitignore`.
 
-The archived visual-graph experiment moved from `out_new_visual_graph/` to
+The archived visual-graph experiment moved from its original output directory to
 `results/visual_graph/`. Numerical artifacts and images retain their original contents.
-Recorded paths inside provenance files describe that historical run. They are not
-rewritten to imply a newly executed experiment. Saved-graph replay checks input
-paths, sizes, timestamps, and algorithm configuration; a fresh clone or relocated
-dataset may not satisfy those checks. Run a new experiment in a new output directory
-when the original provenance is unavailable.
+Machine-specific paths inside published CSV/JSON provenance files are sanitized to
+portable paths under `data/`, `input/`, or `mosaics/`; this sanitization is not a newly
+executed experiment. Saved-graph replay checks input paths, sizes, timestamps, and
+algorithm configuration, so archived provenance from a different checkout should not
+be used as a replay cache. Run a new experiment in a new output directory instead.
 
 For new work, use `data/left/` and `data/right/` for local inputs and `outputs/` for
 generated artifacts. These directories are ignored. Publish only reviewed,
-documented results under `results/`. The visual-graph root script's existing
-`data_set_2` and `out_new_visual_graph_test` defaults were preserved; explicit CLI
-paths are recommended for reproducibility. The backbone CLI replaces the former
-machine-specific `D:` drive paths with portable input/output defaults.
+documented results under `results/`. Both CLIs use these portable relative paths as
+defaults; explicit `--left`, `--right`, and `--output` arguments are recommended for
+reproducibility. No source-code default contains a machine-specific drive or username.
 
 Backbone configuration lives in `src/stereo_uav/backbone/config.py`; runtime modules
 read that module directly. Assigning a copied constant on the old compatibility

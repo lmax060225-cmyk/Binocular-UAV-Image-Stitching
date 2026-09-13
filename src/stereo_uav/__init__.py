@@ -1,1 +1,1 @@
-"""Visual-only stereo UAV registration algorithms."""
+"""Visual-only binocular UAV registration and mosaicking algorithms."""

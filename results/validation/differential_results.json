@@ -43,7 +43,7 @@
     "data\\logs\\block_summary.csv",
     "mosaics\\incremental_mosaic_final.jpg"
   ],
-  "source": "First three data_set_5 stereo frames resized to longest side 800 pixels",
+  "source": "First three non-distributed stereo frames resized to longest side 800 pixels",
   "numerical_tolerance": 1e-10,
   "mosaic_comparison": "pixel-exact"
 }

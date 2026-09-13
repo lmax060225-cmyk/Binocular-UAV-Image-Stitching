@@ -6,6 +6,13 @@ method estimates calibrated 3D camera poses, reconstructs depth, or uses geoloca
 as an observation. A synchronized left/right input layout alone does not imply a
 stereo disparity or epipolar constraint; the two methods treat it differently.
 
+Both implementations are research adaptations of the two-stage registration pattern
+described by [Wang, Fu, and Xu (2025)](references.md#references). Their shared
+four-parameter first stage also follows the constrained global formulation used by
+[MegaStitch](references.md#references). See
+[research provenance and references](references.md) for a feature-level attribution
+map; repository-specific extensions should not be attributed to the cited papers.
+
 For image `i`, let `p_ik` denote a matched source pixel and let `w(H_i, p_ik)`
 denote its inhomogeneous projection under the image-to-global matrix `H_i`.
 All registration coordinates and errors refer to input-image pixels. Rendering
@@ -56,7 +63,7 @@ them does not establish a common geometric coordinate system.
 ### Two-stage registration
 
 The first stage is named `affine` in output files for historical compatibility, but
-its matrix is a four-parameter similarity:
+its matrix is a four-parameter planar similarity, i.e. an element of `Sim(2)`:
 
 ```text
 H_i = [[ a_i,  b_i, c_i],
@@ -67,7 +74,9 @@ H_i = [[ a_i,  b_i, c_i],
 One image per connected component is fixed to identity. The remaining transforms
 minimize the sum of squared 2D matched-point differences. Translation parameters
 are scaled by 5000. The system is linear in these parameters and is solved using
-sparse LSMR; it is not a general six-degree-of-freedom affine fit.
+sparse LSMR; it is not a general six-degree-of-freedom affine fit. Wang et al.
+present the same shared-variable constraints (`a=e`, `b=-d`) and explicitly trace
+them to [MegaStitch](references.md#references).
 
 The second stage uses eight-parameter homographies initialized by the first stage:
 
@@ -93,7 +102,9 @@ q(H) = [a*b + d*e,
 The default `omega` is 800. In particular, the last penalty is the square of
 `g*g + h*h`, not a linear penalty on projective coefficients. This regularizer acts
 on the original matrix entries; it is not the correction-matrix safety penalty
-used by the second algorithm. SciPy least squares uses an analytic sparse Jacobian.
+used by the second algorithm. This objective and the default `omega` and translation
+scale follow [Wang et al.](references.md#references). SciPy least squares uses an
+analytic sparse Jacobian.
 The reference matrix remains identity.
 
 The match budget is 40 points on a 5-by-8 grid for up to 300 images, and 20 points
@@ -108,7 +119,9 @@ construction, or during explicit replay of a saved final graph. The implementati
 does not update a converged full-history solution at each incoming pair and does
 not provide a bounded-latency incremental solver.
 
-Rendering uses sequential Graph-Cut composition with bounded seam-solver resolution.
+Rendering follows [Wang et al.'s](references.md#references) high-level sequential
+Graph-Cut composition strategy, using OpenCV's `GraphCutSeamFinder` with bounded
+seam-solver resolution.
 Planar homographies cannot generally eliminate depth-dependent parallax, moving
 objects, illumination changes, or incorrect correspondences. A low pooled inlier
 RMSE does not establish metric map accuracy or seamless rendering everywhere.
@@ -118,6 +131,13 @@ RMSE does not establish metric map accuracy or seamless rendering everywhere.
 Source: [`src/stereo_uav/backbone`](../src/stereo_uav/backbone).
 Compatibility entry point:
 [`UAV_Binocular_Camera_block_incremental_rigid_stereo_similarity_backbone_core.py`](../UAV_Binocular_Camera_block_incremental_rigid_stereo_similarity_backbone_core.py).
+
+This method retains the Wang-derived similarity-to-projective staging and spatially
+distributed correspondence sampling described by
+[Wang et al.](references.md#references), but its fixed four-image blocks, typed stereo
+residuals, `G_i = S_i @ C_i` factorization, correction safety penalties, and persistent
+two-block window are repository-specific modifications. They are not methods reported
+by Wang et al., MegaStitch, or the global-similarity-prior paper.
 
 ### Fixed block and typed observations
 

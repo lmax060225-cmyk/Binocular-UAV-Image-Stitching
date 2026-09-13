@@ -16,13 +16,13 @@ ImagePair = tuple[ImageKey, ImageKey]
 BASE_DIR = Path(__file__).resolve().parents[3]
 
 
-LEFT_IN = BASE_DIR / "data_set_2" / "left"
+LEFT_IN = Path("data") / "left"
 
 
-RIGHT_IN = BASE_DIR / "data_set_2" / "right"
+RIGHT_IN = Path("data") / "right"
 
 
-OUTPUT_DIR = BASE_DIR / "out_new_visual_graph_test"
+OUTPUT_DIR = Path("outputs") / "visual_graph"
 
 
 @dataclass(frozen=True)

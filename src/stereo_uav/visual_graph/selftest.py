@@ -480,7 +480,7 @@ class SelfTests(unittest.TestCase):
         import tempfile
         from unittest.mock import patch
 
-        with tempfile.TemporaryDirectory(prefix="uav_graph_test_") as directory:
+        with tempfile.TemporaryDirectory(prefix="binocular_uav_test_") as directory:
             output = Path(directory)
             (output / "data").mkdir()
             (output / "data" / "image_optimization_graph.csv").write_text("existing graph")

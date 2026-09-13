@@ -9,7 +9,8 @@ current refactor checks.
 
 ## Inputs and graph
 
-The original experiment processed `data_set_5/left` and `data_set_5/right`: 70
+The original experiment processed non-distributed inputs now represented as
+`data/left` and `data/right`: 70
 synchronized stereo pairs and 140 images. The final image graph contains 478
 ordinary optimization edges and one connected component. Its pair topology has
 69 tree relations, 85 strong relations, and 64 loop relations. Image role counts
@@ -83,7 +84,7 @@ scales differ.
 For a new run, provide the raw synchronized images explicitly:
 
 ```sh
-python uav_stereo_incremental_visual_graph_global_registration.py --left data_set_5/left --right data_set_5/right --output outputs/visual_graph_full
+python uav_stereo_incremental_visual_graph_global_registration.py --left data/left --right data/right --output outputs/visual_graph_full
 ```
 
 The original self-test suite passed 18 tests. Current refactor checks are reported

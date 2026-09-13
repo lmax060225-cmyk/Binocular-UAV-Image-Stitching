@@ -132,7 +132,7 @@
     {
       "stage": "affine",
       "component": 0,
-      "file": "D:\\UAV_Graph\\out_new_visual_graph\\mosaics\\global_affine_mosaic.jpg",
+      "file": "mosaics/global_affine_mosaic.jpg",
       "width": 3733,
       "height": 4959,
       "render_scale": 0.8287545475175242,
@@ -165,7 +165,7 @@
     {
       "stage": "projective",
       "component": 0,
-      "file": "D:\\UAV_Graph\\out_new_visual_graph\\mosaics\\global_projective_mosaic.jpg",
+      "file": "mosaics/global_projective_mosaic.jpg",
       "width": 4406,
       "height": 6812,
       "render_scale": 0.8287545475175242,

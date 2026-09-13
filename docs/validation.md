@@ -1,8 +1,9 @@
 # Refactor validation
 
 Validation was performed on 2026-09-11. The working versions of the original two
-scripts were preserved outside the repository before editing. The baseline includes
-the user's existing visual-graph default-path changes.
+scripts were preserved outside the repository before editing. Machine-specific path
+fields in the published validation artifacts were later sanitized without changing
+the recorded numerical results.
 
 ## Automated checks
 
@@ -23,9 +24,9 @@ the user's existing visual-graph default-path changes.
 
 ## Real-image differential integration check
 
-The first three consecutive pairs from the local `data_set_5` input were resized
-to an 800-pixel longest side and renamed with purely numerical stems. Both original
-and refactored backbone pipelines received identical images, random seeds, one
+The first three consecutive pairs from a non-distributed local input were resized to
+an 800-pixel longest side and renamed with purely numerical stems. Both original and
+refactored backbone pipelines received identical images, random seeds, one
 OpenCV thread, default numerical settings, and ordered-overwrite compositing.
 
 Both completed two blocks and produced final six-image mosaics. All **41 output

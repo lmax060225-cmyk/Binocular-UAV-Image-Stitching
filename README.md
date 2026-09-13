@@ -1,6 +1,8 @@
-# StereoUAV-Graph-Stitching
+# Binocular-UAV-Image-Stitching
 
-Two visual-only algorithms for synchronized binocular UAV image registration and mosaicking.
+Image stitching for large-scale synchronized binocular UAV image collections.
+
+This repository provides two visual-only registration and mosaicking algorithms.
 
 | Algorithm | Registration strategy | Stereo treatment |
 |---|---|---|
@@ -11,6 +13,27 @@ Read the [algorithm definitions and comparison](docs/algorithms.md) for the exac
 objectives, propagation rules, assumptions, and limitations. The first stage is
 called `affine` in legacy outputs, but both implementations use a four-parameter
 similarity model in that stage.
+
+## Research basis and citation
+
+The primary methodological basis of this repository is Wang, Fu, and Xu's
+two-stage global-registration method for large-scale UAV mosaicking. The visual-graph
+implementation retains its similarity-constrained first stage, projective refinement,
+rigid regularizer, translation scaling, and sequential Graph-Cut composition, while
+replacing GPS-neighbor construction with a stereo-aware incremental visual graph.
+The similarity-backbone implementation is a further structural extension that uses
+typed stereo residuals and a persistent two-block optimization window.
+
+The four-parameter transform used here is a member of the planar similarity group
+`Sim(2)`. Its direct methodological lineage is the constrained global linear model
+used by MegaStitch and then adopted by Wang et al. Chen and Chuang's global similarity
+prior is included as related image-stitching literature, but this repository does not
+implement their mesh-warp objective or their scale/rotation-selection procedure.
+
+See [research provenance and references](docs/references.md) for the precise
+implemented-versus-adapted boundary and [references.bib](references.bib) for reusable
+BibTeX entries. If this repository supports academic work, cite the Wang et al. paper
+as the primary source and MegaStitch for the similarity-constrained global formulation.
 
 ## Installation
 
@@ -83,6 +106,8 @@ against the visual-graph method. See [validation evidence](docs/validation.md).
 - [`src/stereo_uav/backbone`](src/stereo_uav/backbone): typed blocks, similarity initialization, projective corrections, persistent windows, and rendering.
 - [`tests`](tests): numerical, graph, stereo-residual, and propagation regression checks.
 - [`docs`](docs): algorithm definitions, migration guidance, and validation scope.
+- [`docs/references.md`](docs/references.md): research provenance, citation guidance, and references.
+- [`references.bib`](references.bib): verified BibTeX metadata for the principal references.
 - [`results`](results): reviewed experiment artifacts for these two algorithms.
 
 The original root script names remain as compatibility entry points. The repository
