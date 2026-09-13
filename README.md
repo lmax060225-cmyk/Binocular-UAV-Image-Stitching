@@ -32,8 +32,7 @@ implement their mesh-warp objective or their scale/rotation-selection procedure.
 
 See [research provenance and references](docs/references.md) for the precise
 implemented-versus-adapted boundary and [references.bib](references.bib) for reusable
-BibTeX entries. If this repository supports academic work, cite the Wang et al. paper
-as the primary source and MegaStitch for the similarity-constrained global formulation.
+BibTeX entries. 
 
 ## Installation
 
